@@ -1,0 +1,293 @@
+@font-face {
+    font-family: oscar;
+    src: url(../fonts/BebasNeue-webfont.ttf),
+        url(../fonts/BebasNeue-webfont.eot),
+        url(../fonts/BebasNeue-webfont.woff),
+        url(../fonts/BebasNeue-webfont.svg);
+}
+@font-face {
+    font-family: f2;
+    src: url(../fonts/ColabThi-webfont.ttf),
+        url(../fonts/ColabThi-webfont.eot),
+        url(../fonts/ColabThi-webfont.woff),
+        url(../fonts/ColabThi-webfont.svg);
+}
+@font-face {
+    font-family: f3;
+    src: url(../fonts/Vera-webfont.ttf),
+        url(../fonts/Vera-webfont.eot),
+        url(../fonts/Vera-webfont.woff),
+        url(../fonts/Vera-webfont.svg);
+}
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    outline: 0;
+	    font-weight: inherit;
+	    font-style: inherit;
+	    font-size: 100%;
+	    font-family: inherit;
+	    vertical-align: baseline;
+    }
+/* * {
+    box-sizing: border-box;
+} */
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	font-size:0;
+}
+.clearfix { 
+   *zoom:1;
+}
+header,
+section,
+footer {
+	width: 940px;
+	margin: 0 auto;
+}
+header {
+	width: 940px;
+	margin: 0 auto;
+	background-image: url(../images/buntingFW.png);
+	background-repeat: repeat-x;
+	padding-top: 43px;
+}
+header h1 {
+	padding-top: 4px;
+	line-height: 91px;
+	font-size: 48px;
+	font-family: oscar;
+}
+header h1 a {
+	color: #0d0c0c;
+	text-shadow: 1px 2px #dad7d7;
+}
+header h1 span {
+	color: #dfdada;
+}
+nav {
+	width: 100%;
+	display: table;
+	padding: 0 10px;
+	background: linear-gradient(#fff, #e3e3e3);
+	margin-left: -10px;
+}
+nav ul {
+	display: table-row;
+}
+nav ul li {
+	display: table-cell;
+	text-align: center;
+	line-height: 42px;
+}
+nav ul li a {
+	font-family: oscar;
+	font-size: 30px;
+}
+nav ul li:nth-child(odd) a {
+   color: #0d0c0c;
+}
+nav ul li:nth-child(even) a {
+	color: #fe0208;
+}
+nav ul li:nth-child(1) {
+	text-align: left;
+}
+nav ul li:nth-child(6) {
+	text-align: right;
+}
+nav ul li a:hover {
+	animation: shan .2s infinite;
+}
+@keyframes shan {
+	0% {
+		text-shadow: 0 0 0px red;
+	}
+	25% {
+		text-shadow: 0 0 10px red; 
+	}
+	50% {
+		text-shadow: 0 0 20px blue; 
+	}
+	75% {
+		text-shadow: 0 0 10px blue; 
+	}
+	100% {
+		text-shadow: 0 0 0px blue; 
+	}
+	
+}
+section {
+	border-top: 4px double #d6d5d5;
+	border-bottom: 4px double #d6d5d5;
+	margin-top: 25px;
+	padding-top: 20px;
+	
+
+}
+aside {
+	float: left;
+	width: 219px;
+	padding: 32px 10px;
+	margin-left: -10px;
+	box-shadow: 3px 3px 6px #0d0c0c;
+	margin-bottom: 15px;
+}
+h3 {
+	font-family: oscar;
+	font-size: 30px;
+	color: #060606;
+	margin-bottom: 18px;
+	letter-spacing: -0.7px;
+}
+aside>div:first-child {
+	margin-bottom: 26px;
+}
+aside>div>div div:first-child {
+	float: left;
+	width: 99px;
+}
+aside>div>div div:last-child {
+	float: right;
+	width: 99px;
+}
+aside>div>div>div img {
+	width: 100%;
+	display: block;
+}
+aside>div>div>div a {
+	display: block;
+}
+aside>div>div>div a:last-child {
+	width: 100%;
+	margin-top: 13px;
+	margin-left: -1px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 22px;
+	color: #5c5959;
+	border-radius: 10px;
+	border: 1px solid #a19e9e;
+	box-shadow: 0 1px 2px #646464;
+	background: linear-gradient(#dddddd,#b0b0b0);
+}
+.one img {
+	animation: zuo .1s infinite alternate;
+}
+.two img {
+	animation: you .1s infinite alternate;
+}
+aside>div>div>div a:last-child:hover {
+	animation: yinying .5s infinite alternate;
+}
+@keyframes zuo {
+	from {
+		transform: rotate(-5deg);
+	}
+	to {
+		transform: rotate(5deg);
+	}
+}
+@keyframes you {
+	from {
+		transform: rotate(5deg);
+	}
+	to {
+		transform: rotate(-5deg);
+	}
+}
+@keyframes yinying {
+	form {
+		box-shadow: 0px 0px 0px #646464;
+	}
+	to {
+		box-shadow: 0px 3px 8px #646464;
+	}
+}
+article {
+	float: right;
+	width: 710px;
+}
+article img {
+	float: left;
+	margin-left: 40px;
+	margin-right: 30px ;
+}
+h2 {
+	font-size: 102px;
+	color: #0d0c0c;
+	text-shadow: 1px 2px #dad7d7;
+	font-family: oscar;
+	margin-top: 13px;
+}
+h2 span {
+	display: block;
+	font-family: f3;
+	font-size: 36px;
+	color: #757474;
+	line-height: 45px;
+	margin-top: -13px;
+
+}
+article p {
+	font-size: 30px;
+	color: #757474;
+	font-family: f2;
+	margin: 13px 0 33px 0;
+}
+article a {
+	float: left;
+	font-size: 36px;
+	color: #fff;
+	font-family: oscar;
+	background: linear-gradient(#f15d61,#ac181c);
+	padding: 24px 44px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 6px #8f8f8f;
+	text-shadow: 0 2px #000;
+	transition: text-shadow 1s,color 1s;
+}
+article a:hover {
+	color: #000;
+	text-shadow: 0 2px #fff;
+
+}
+article a span {
+	/* transition: all 1s; */
+	transition: text-shadow 1s,color 1s;
+}
+footer {
+	background-image:  url(../images/buntingFWinvert.png);
+	background-repeat: repeat-x;
+	background-position:0px bottom;
+}
+footer p {
+	text-align: center;
+	color: #757474;
+	font-size: 18px;
+	font-family: oscar;
+	line-height: 80px;
+	padding-bottom: 43px;
+	
+}
+
